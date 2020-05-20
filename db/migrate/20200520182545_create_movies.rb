@@ -1,4 +1,4 @@
-class CreateMovies < ActiveRecord::Migration[5.2.4]
+class CreateMovies < ActiveRecord::Migration[5.2]
   
   def change
     create_table :movies do |t|
@@ -6,6 +6,7 @@ class CreateMovies < ActiveRecord::Migration[5.2.4]
       t.datetime :release_date
       t.string :director
       t.string :lead
+      t. boolean :in_theaters
     end
   end
 
